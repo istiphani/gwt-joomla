@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+  <name>gwt-jmla-20</name>
+  <version>2.0</version>
+  <creationDate>05/01/2013</creationDate>
+  <author>pcdspo</author>
+  <authorEmail>info@pcdspo.gov.ph</authorEmail>
+  <copyright>Copyright (C) 2013 UWCP PCDSPO</copyright>
+  <description>Joomla 3 Government Web Template</description>
+  <files>
+    <filename>index.php</filename>
+    <folder>css</folder>
+    <folder>js</folder>
+    <folder>images</folder>
+    <folder>uploads</folder>
+    <folder>html</folder>
+    <folder>layouts</folder>
+  </files>
+  <positions>
+        <position>topbar-left-transparency</position>
+        <position>topbar-left-custom1</position>
+        <position>topbar-left-custom2</position>
+        <position>topbar-left-custom3</position>
+        <position>topbar-right</position>
+        <position>topbar-right-custom1</position>
+        <position>topbar-right-custom2</position>
+        <position>topbar-right-custom3</position>
+        <position>search</position>
+        <position>main-content</position>
+        <position>slider</position>
+        <position>left-sidebar-panel1</position>
+        <position>left-sidebar-panel2</position>
+        <position>right-sidebar-panel1</position>
+        <position>right-sidebar-panel2</position>
+        <position>supplementary1</position>
+        <position>supplementary2</position>
+        <position>supplementary3</position>
+  </positions>
+  <config>
+    <fields name="params">
+      <fieldset name="advanced">
+        <field name="headerBackgroundColor" class="" type="color" default="#142745"
+          label="Header background color"
+          description="Enter the hex code for your header background color." />
+
+        <field name="headerBackgroundImage" class="" type="media" default=""
+          label="Header Background Image"
+          description="Enter your background image here." />
+
+        <field name="bannerBackgroundColor" class="" type="color" default="#1f3a70"
+          label="Banner background color"
+          description="Enter the hex code for your banner background color." />
+
+        <field name="logoFile" class="" type="media" default=""
+          label="Logo upload"
+          description="Upload your logo here" />
+
+        <field name="logoPosition"
+          type="radio"
+          class="btn-group"
+          default="0"
+          label="Logo Position"
+          description="Select Logo Position."
+        >
+          <option value="0">LEFT</option>
+          <option value="1">CENTER</option>
+        </field>
+
+        <field name="bannerFullwidth"
+          type="radio"
+          class="btn-group"
+          default="0"
+          label="Fullwidth Liquid Banner"
+          description="Select Yes to enable Full Width liquid banner."
+        >
+          <option value="0">NO</option>
+          <option value="1">YES</option>
+        </field>
+
+        <field name="sidebarPosition"
+          type="radio"
+          class="btn-group"
+          default="0"
+          label="Sidebar Position"
+          description="Select Sidebar Position."
+        >
+          <option value="0">LEFT</option>
+          <option value="1">RIGHT</option>
+          <option value="2">DISABLE</option>
+          <option value="3">BOTH</option>
+        </field>
+
+        <field name="sealPosition"
+          type="radio"
+          class="btn-group"
+          default="0"
+          label="Transparency Seal Position"
+          description="Select Transparency Seal Position."
+        >
+          <option value="0">LEFT</option>
+          <option value="1">RIGHT</option>
+        </field>
+
+      </fieldset>
+    </fields>
+  </config>
+</extension>
