@@ -1,6 +1,7 @@
 <?php
 defined('_JEXEC') or die;
 ?>
+
 <div class="search<?php echo $moduleclass_sfx ?>">
     <form action="<?php echo JRoute::_('index.php');?>" method="post" class="form-inline">
     		<?php

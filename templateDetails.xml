@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.0" type="template" client="site">
-  <name>gwt-jmla-20</name>
-  <version>2.0</version>
+  <name>gwt-jmla-221</name>
+  <version>2.2.1</version>
   <creationDate>05/01/2013</creationDate>
   <author>pcdspo</author>
-  <authorEmail>info@pcdspo.gov.ph</authorEmail>
+  <authorEmail>gwtsupport@i.gov.ph</authorEmail>
+  <authorURL>http://uwcp.i.gov.ph</authorURL>
   <copyright>Copyright (C) 2013 UWCP PCDSPO</copyright>
   <description>Joomla 3 Government Web Template</description>
-  <files>
+
+    <files>
     <filename>index.php</filename>
+    <filename>favico.ico</filename>
+    <filename>framework.php</filename>
     <folder>css</folder>
     <folder>js</folder>
     <folder>images</folder>
@@ -17,55 +21,58 @@
     <folder>html</folder>
     <folder>layouts</folder>
   </files>
+
   <positions>
-        <position>topbar-left-transparency</position>
-        <position>topbar-left-custom1</position>
-        <position>topbar-left-custom2</position>
-        <position>topbar-left-custom3</position>
-        <position>topbar-right</position>
-        <position>topbar-right-custom1</position>
-        <position>topbar-right-custom2</position>
-        <position>topbar-right-custom3</position>
+        <position>home</position>
+        <position>topbar-left-1</position>
+        <position>topbar-left-2</position>
+        <position>topbar-left-3</position>
+        <position>topbar-left-4</position>
+        <position>topbar-right-1</position>
+        <position>topbar-right-2</position>
         <position>search</position>
+		<position>auxiliary-menu</position>
+		<position>breadcrumb</position>
         <position>main-content</position>
         <position>slider</position>
         <position>left-sidebar-panel1</position>
         <position>left-sidebar-panel2</position>
+        <position>left-sidebar-panel3</position>
         <position>right-sidebar-panel1</position>
         <position>right-sidebar-panel2</position>
-        <position>supplementary1</position>
-        <position>supplementary2</position>
-        <position>supplementary3</position>
+        <position>right-sidebar-panel3</position>
+        <position>agencyfooter-1</position>
+        <position>agencyfooter-2</position>
+        <position>agencyfooter-3</position>
   </positions>
+
   <config>
-    <fields name="params">
-      <fieldset name="advanced">
-        <field name="headerBackgroundColor" class="" type="color" default="#142745"
-          label="Header background color"
-          description="Enter the hex code for your header background color." />
-
-        <field name="headerBackgroundImage" class="" type="media" default=""
-          label="Header Background Image"
-          description="Enter your background image here." />
-
-        <field name="bannerBackgroundColor" class="" type="color" default="#1f3a70"
-          label="Banner background color"
-          description="Enter the hex code for your banner background color." />
+    <fields name="params">  
+          
+      <fieldset name="themeOptions" label="Theme Options">
 
         <field name="logoFile" class="" type="media" default=""
-          label="Logo upload"
-          description="Upload your logo here" />
-
+          label="Header Logo Upload"
+          description="Upload the image of your logo and agency name here" />
+          
         <field name="logoPosition"
           type="radio"
           class="btn-group"
           default="0"
-          label="Logo Position"
+          label="Header Logo Position"
           description="Select Logo Position."
         >
           <option value="0">LEFT</option>
           <option value="1">CENTER</option>
         </field>
+          
+        <field name="headerBackgroundColor" class="" type="color" default="#142745"
+          label="Header Background Color"
+          description="Enter the hex code for your header background color." />
+
+        <field name="headerBackgroundImage" class="" type="media" default=""
+          label="Header Background Image"
+          description="Enter your background image here." />
 
         <field name="bannerFullwidth"
           type="radio"
@@ -77,6 +84,10 @@
           <option value="0">NO</option>
           <option value="1">YES</option>
         </field>
+          
+        <field name="bannerBackgroundColor" class="" type="color" default="#1f3a70"
+          label="Banner Background Color"
+          description="Enter the hex code for your banner background color." />
 
         <field name="sidebarPosition"
           type="radio"
@@ -90,18 +101,64 @@
           <option value="2">DISABLE</option>
           <option value="3">BOTH</option>
         </field>
+    </fieldset>  
+        
+    <fieldset name="sliderOptions" label="Image Slider">
+            
+        <field name="imgUrl1" label="Image 1" description="Image 1" type="media" />
+        <field name="imgExcerpt1" label="Caption 1" description="Caption 1" type="text" />
+        <field name="imgLink1" label="Link 1" description="Link 1" type="text" />
+				
+        <field name="imgUrl2" label="Image 2" description="Image 1" type="media" />
+        <field name="imgExcerpt2" label="Caption 2" description="Caption 2" type="text" />
+        <field name="imgLink2" label="Link 2" description="Link 2" type="text" />
+            
+        <field name="imgUrl3" label="Image 3" description="Image 3" type="media" />
+        <field name="imgExcerpt3" label="Caption 3" description="Caption 3" type="text" />
+        <field name="imgLink3" label="Link 3" description="Link 3" type="text" />
+            
+        <field name="imgUrl4" label="Image 4" description="Image 4" type="media" />
+        <field name="imgExcerpt4" label="Caption 4" description="Caption 4" type="text" />
+        <field name="imgLink4" label="Link 4" description="Link 4" type="text" />
+            
+        <field name="imgUrl5" label="Image 5" description="Image 5" type="media" />
+        <field name="imgExcerpt5" label="Caption 5" description="Caption 5" type="text" />
+        <field name="imgLink5" label="Link 5" description="Link 5" type="text" />
+                  
+    </fieldset>    
+          
+    <fieldset name="accessibility" label="Accessibility">
+		<field name="accessAccessibility" class="" type="text" default=""
+          label="Accessibility Access Key Site (Alt+0): Accessibility Statement"
+          description="Enter link for accessibility accesskey (0)" />
 
-        <field name="sealPosition"
-          type="radio"
-          class="btn-group"
-          default="0"
-          label="Transparency Seal Position"
-          description="Select Transparency Seal Position."
-        >
-          <option value="0">LEFT</option>
-          <option value="1">RIGHT</option>
-        </field>
+		<field name="accessHome" class="" type="text" default="home"
+          label="Accessibility Access Key Site (Alt+1): Home"
+          description="Enter link for home accesskey (1)" />
 
+		<field name="accessContent" class="" type="text" default="#maincontents"
+          label="Accessibility Access Key Site (Alt+R): Main Content"
+          description="Enter link for main content accesskey (R)" />
+
+		<field name="accessFAQ" class="" type="text" default=""
+          label="Accessibility Access Key Site (Alt+5): FAQ"
+          description="Enter link for FAQ accesskey (5)" />
+
+		<field name="accessContact" class="" type="text" default=""
+          label="Accessibility Access Key Site (Alt+C): Contact"
+          description="Enter link for search accesskey (C)" />
+		  
+		<field name="accessFeedback" class="" type="text" default=""
+          label="Accessibility Access Key Site (Alt+K): Feedback"
+          description="Enter link for search accesskey (K)" />
+
+		<field name="accessSiteMap" class="" type="text" default="#agencyfooter"
+          label="Accessibility Access Key Site (Alt+M): Site Map"
+          description="Enter link for search accesskey (M)" />
+
+		<field name="accessSearch" class="" type="text" default=""
+          label="Accessibility Access Key Site (Alt+S): Search"
+          description="Enter link for search accesskey (S)" />
       </fieldset>
     </fields>
   </config>
