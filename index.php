@@ -296,11 +296,6 @@ else
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/footer.php'; ?>
 
 
-
-
-
-
-
   <script src="<?php echo 'templates/' . $this->template . '/js/foundation.min.js'; ?>"></script>
   <script src="<?php echo 'templates/' . $this->template . '/js/custom.js'; ?>"></script>
 
