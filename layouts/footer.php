@@ -36,8 +36,7 @@
                   </div>
               </article>
           </div>
-
-    
+   
           <div class="large-3 columns widget-area pull-4" role="complementary">
               <article id="nav_menu-3" class="widget widget_nav_menu">
                   <div class="footer-section"><h6><strong>Republic of the Philippines</strong></h6>

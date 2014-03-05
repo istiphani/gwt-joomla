@@ -404,7 +404,7 @@ width="280" height="280"></div>
 
   <script>
   document.write('<script src=' +
-  ('__proto__' in {} ? 'templates/uwcp/js/vendor/zepto' : 'templates/uwcp/js/vendor/jquery') +
+  ('__proto__' in {} ? 'templates/gwt-joomla-gwt-joomla-2.2.3/js/vendor/zepto' : 'templates/gwt-joomla-gwt-joomla-2.2.3/js/vendor/jquery') +
   '.js><\/script>')
   </script>
 

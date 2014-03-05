@@ -47,14 +47,8 @@
                         <?php if ($article_title): ?>
                             <h1 class="entry-title"><?php echo $article_title;  ?></h1>
                         <?php endif ?>
-                        <?php if ($category == 'blog' || $category == 'News & Info'): ?>
-                            <p>Published <?php echo $article_created; ?></p>
-                            <p>by <span class="author"><?php echo $author; ?></span></p>
-                            <p>Hello world!</p>
                     
                     
-                    
-                        <?php endif ?>
                     <?php endif ?>
                 </header>
             </div>

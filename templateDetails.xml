@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.0" type="template" client="site">
-  <name>gwt-jmla-221</name>
-  <version>2.2.1</version>
+  <name>gwt-joomla-2.2.3/name>
+  <version>2.2.3</version>
   <creationDate>05/01/2013</creationDate>
-  <author>pcdspo</author>
+  <author>iGov Philippines</author>
   <authorEmail>gwtsupport@i.gov.ph</authorEmail>
-  <authorURL>http://uwcp.i.gov.ph</authorURL>
-  <copyright>Copyright (C) 2013 UWCP PCDSPO</copyright>
-  <description>Joomla 3 Government Web Template</description>
+  <authorURL>http://ao39.i.gov.ph</authorURL>
+  <copyright>Copyright (C) 2013 iGov Philippines</copyright>
+  <description>Joomla 3.x Government Web Template</description>
 
     <files>
     <filename>index.php</filename>
