@@ -23,7 +23,7 @@
               <article id="image-3" class="widget widget_image">
                   <div class="footer-section">
                       <div class="jetpack-image-container">
-                          <img class="seal-mono" src="templates/gwt-jmla-223/images/govph-seal-mono-footer.png" alt="Seal of the Republic of the Philippines - Monochromatic" title="Seal of the Republic of the Philippines - Monochromatic" class="aligncenter" width="280" height="280">
+                          <img class="seal-mono" src="templates/gwt-joomla-gwt-joomla-2.2.3/images/govph-seal-mono-footer.png" alt="Seal of the Republic of the Philippines - Monochromatic" title="Seal of the Republic of the Philippines - Monochromatic" class="aligncenter" width="280" height="280">
                       </div>
                   </div>
               </article>

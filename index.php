@@ -301,7 +301,7 @@ else
 
   <script>
   document.write('<script src=' +
-  ('__proto__' in {} ? 'templates/gwt-jmla-223/js/vendor/zepto' : 'templates/gwt-jmla-223/js/vendor/jquery') +
+  ('__proto__' in {} ? 'templates/gwt-joomla-gwt-joomla-2.2.3/js/vendor/zepto' : 'templates/gwt-joomla-gwt-joomla-2.2.3/js/vendor/jquery') +
   '.js><\/script>')
   </script>
   
