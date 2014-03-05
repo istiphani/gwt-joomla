@@ -5,7 +5,7 @@
                     <ul class="title-area">
                         <!-- Title Area -->
                         <li class="name">
-                            <h1><a href="http://www.gov.ph" style=""><img src="templates/gwt-joomla-gwt-joomla-2.2.3/images/seal-govph-old.png" alt="Republic of the Philippines"></a></h1>
+                            <h1><a href="http://www.gov.ph" style=""><img src="templates/gwt-jmla-223/images/seal-govph-old.png" alt="Republic of the Philippines"></a></h1>
                         </li>
                         <li class="toggle-topbar"><a href="#"></a></li>
                     </ul>

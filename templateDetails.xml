@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.0" type="template" client="site">
-  <name>gwt-joomla-2.2.3/name>
-  <version>2.2.3</version>
+  <name>gwt-jmla-223</name>
+  <version>2.23</version>
   <creationDate>05/01/2013</creationDate>
   <author>iGov Philippines</author>
   <authorEmail>gwtsupport@i.gov.ph</authorEmail>
   <authorURL>http://ao39.i.gov.ph</authorURL>
-  <copyright>Copyright (C) 2013 iGov Philippines</copyright>
+  <copyright>Copyright (C) 2013 iGovPhilippines</copyright>
   <description>Joomla 3.x Government Web Template</description>
 
     <files>
@@ -17,7 +17,6 @@
     <folder>css</folder>
     <folder>js</folder>
     <folder>images</folder>
-    <folder>uploads</folder>
     <folder>html</folder>
     <folder>layouts</folder>
   </files>

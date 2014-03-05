@@ -9,11 +9,12 @@
     version: '4.2.0',
 
     settings: {
-      timer_speed: 10000,
+	  animation: 'fade',	
+      timer_speed: 2500,
       pause_on_hover: true,
-      resume_on_mouseout: false,
-      animation_speed: 500,
-      bullets: true,
+      resume_on_mouseout: true,
+      animation_speed: 1000,
+      bullets: false,
       stack_on_small: true,
       navigation_arrows: true,
       slide_number: true,
