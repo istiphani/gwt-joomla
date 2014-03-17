@@ -20,3 +20,7 @@ than 767px
 /templates/gwt-jmla/223/images/transparency-seal.png
       * Slider input in template, images, captions, and link to
       * For slider, input images in theme options and create a blank CUSTOM HTML Module to place in the SLIDER module position.
+
+==========
+Template Contributors:
+Eric Colmenares - Department of Science and Technology Region 11, http://region11.dost.gov.ph
