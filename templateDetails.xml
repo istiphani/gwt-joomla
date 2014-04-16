@@ -74,7 +74,7 @@
           label="Header Background Image"
           description="Enter your background image here." />
 
-        <field name="bannerFullwidth"
+        <!--field name="bannerFullwidth"
           type="radio"
           class="btn-group"
           default="0"
@@ -83,7 +83,7 @@
         >
           <option value="0">NO</option>
           <option value="1">YES</option>
-        </field>
+        </field-->
           
         <field name="bannerBackgroundColor" class="" type="color" default="#1f3a70"
           label="Banner Background Color"
