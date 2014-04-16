@@ -209,6 +209,8 @@ else
       <div id="content" class="large-6 columns" role="main">
         <a name="maincontents"></a>
         <div class="post-box">
+		  <jdoc:include type="modules" name="main-content" style="xhtml" />
+		  <jdoc:include type="modules" name="main-content-2" style="xhtml" />
           <jdoc:include type="message" style="xhtml" />
           <jdoc:include type="component" style="xhtml" />
         </div>
@@ -232,6 +234,8 @@ else
       <div id="content" class="large-12 columns" role="main">
         <a name="maincontents"></a> 
         <div class="post-box">
+		  <jdoc:include type="modules" name="main-content" style="xhtml" />
+		  <jdoc:include type="modules" name="main-content-2" style="xhtml" />
           <jdoc:include type="message" style="xhtml" />
           <jdoc:include type="component" style="xhtml" />
         </div>
@@ -240,6 +244,8 @@ else
       <div id="content" class="large-8 columns" role="main">
         <a name="maincontents"></a>
         <div class="post-box">
+		  <jdoc:include type="modules" name="main-content" style="xhtml" />
+	      <jdoc:include type="modules" name="main-content-2" style="xhtml" />
           <jdoc:include type="message" style="xhtml" />
           <jdoc:include type="component" style="xhtml" />
         </div>
@@ -280,6 +286,8 @@ else
       <div id="content" class="large-8 columns" role="main">
           <a name="maincontents"></a>
         <div class="post-box">
+		  <jdoc:include type="modules" name="main-content" style="xhtml" />
+		  <jdoc:include type="modules" name="main-content-2" style="xhtml" />
           <jdoc:include type="message" style="xhtml" />
           <jdoc:include type="component" style="xhtml" />
         </div>
