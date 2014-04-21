@@ -39,11 +39,11 @@ p {clear: left;}
 
 .moduletable {
     margin-bottom:0.5em;
-    border-width: thin;
+    /* border-width: thin;
     border-style: solid;
-    border-color: rgb(215, 215, 219);
+    border-color: rgb(215, 215, 219); */
     padding: 10px 10px 10px 10px;
-    background-color:#f8f8f8; }
+    /* background-color:#f8f8f8; */ } 
 	.moduletable > h3 {
   		font-weight: bold;
   		font-size: 1.175em;
