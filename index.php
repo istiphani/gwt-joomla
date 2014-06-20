@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 $doc = JFactory::getDocument();
 
 $doc->addStyleSheet('templates/' . $this->template . '/css/foundation.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
+$doc->addStyleSheet('templates/' . $this->template . '/style.css');
 
 $doc->addScript('templates/' . $this->template . '/js/vendor/custom.modernizr.js', 'text/javascript');
 JHtml::_('jquery.framework');
@@ -299,61 +299,17 @@ else
 
 
 
-<!-- Agency & Standard Footer -->
-<?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/footer.php'; ?>
+<!-- Agency Footer -->
+<?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/agencyfooter.php'; ?>
+
+<!-- Standard Footer -->
+<?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/footer.php'; ?>
 
 <!--a href="#" class="scrollup">Scroll</a><a>Hello</a-->
 
 <!-- JS Files -->
-<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/jquery.js"></script>
-
-
-
-
-  <script src="<?php echo 'templates/' . $this->template . '/js/foundation.min.js'; ?>"></script>
-  <script src="<?php echo 'templates/' . $this->template . '/js/custom.js'; ?>"></script>
-
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'templates/gwt-jmla-223/js/vendor/zepto' : 'templates/gwt-jmla-223/js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src="js/foundation.min.js"></script>
-  
-  <script src="js/foundation/foundation.js"></script>
-  
-  <script src="js/foundation/foundation.alerts.js"></script>
-  
-  <script src="js/foundation/foundation.clearing.js"></script>
-  
-  <script src="js/foundation/foundation.cookie.js"></script>
-  
-  <script src="js/foundation/foundation.dropdown.js"></script>
-  
-  <script src="js/foundation/foundation.forms.js"></script>
-  
-  <script src="js/foundation/foundation.joyride.js"></script>
-  
-  <script src="js/foundation/foundation.magellan.js"></script>
-  
-  <script src="js/foundation/foundation.orbit.js"></script>
-                                                    
-  <script src="js/foundation/foundation.orbit.fullwidth.js"></script>    
-                                                 
-  <script src="js/foundation/foundation.reveal.js"></script>
-  
-  <script src="js/foundation/foundation.section.js"></script>
-  
-  <script src="js/foundation/foundation.tooltips.js"></script>
-  
-  <script src="js/foundation/foundation.topbar.js"></script>
-  
-  <script src="js/foundation/foundation.interchange.js"></script>
-  
-  <script src="js/foundation/foundation.placeholder.js"></script>
-  
-  <script src="js/foundation/foundation.abide.js"></script>
+<script src="<?php echo 'templates/' . $this->template . '/js/vendor/jquery.js'; ?>"></script>
+<script src="<?php echo 'templates/' . $this->template . '/js/foundation.min.js'; ?>"></script>
 
   <!-- animation: slide or fade -->
   <script>
