@@ -7,3 +7,8 @@ Notes:
 * Any content in the masthead area should NOT EXCEED 100px.
 * This version is still on alpha release. Alpha releases are the first to come out, and are the least stable. Most reported errors are resolved but there are most likely still outstanding known issues.
 * For experienced Joomla users, please report any template issues to gwtsupport@i.gov.ph.
+
+Updates:
+* Foundation framework
+* Module positions
+* Bug fixes for template overrides from gwt-joomla-2.2.3
