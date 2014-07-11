@@ -5,7 +5,7 @@ defined('_JEXEC') or die;
 <div class="search<?php echo $moduleclass_sfx ?>">
     <form action="<?php echo JRoute::_('index.php');?>" method="post" class="form-inline">
     		<?php
-				$output = '<input name="searchword" id="mod-search-searchword" maxlength="' . $maxlength . '"  class="inputbox search-query" type="text" size="' . $width . '" value="' . $text . '"  onblur="if (this.value==\'\') this.value=\'' . $text . '\';" onfocus="if (this.value==\'' . $text . '\') this.value=\'\';" />';
+				$output = '<input name="searchword" id="mod-search-searchword" maxlength="50"  class="inputbox search-query" type="text" size="' . $width . '" value="' . $text . '"  onblur="if (this.value==\'\') this.value=\'' . $text . '\';" onfocus="if (this.value==\'' . $text . '\') this.value=\'\';" />';
 
 				if ($button) :
 					if ($imagebutton) :
@@ -13,6 +13,8 @@ defined('_JEXEC') or die;
 					else :
 						$button = ' <button class="button btn btn-primary" onclick="this.form.searchword.focus();">' . $button_text . '</button>';
 					endif;
+					else :
+						$button = '';
 				endif;
 
 				switch ($button_pos) :

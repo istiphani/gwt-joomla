@@ -20,7 +20,6 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 	echo $this->item->pagination;
 }
 ?>
-			
 	<?php if (!$this->print) : ?>
 		<?php if ($canEdit || $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
 		<div class="btn-group pull-right">
@@ -44,7 +43,6 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 		<?php echo JHtml::_('icon.print_screen', $this->item, $params); ?>
 		</div>
 	<?php endif; ?>
-	
 <?php $useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')
 	|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author')); ?>
 	<?php if ($useDefList && ($info == 0 || $info == 2)) : ?>

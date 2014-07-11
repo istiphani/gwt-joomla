@@ -13,11 +13,11 @@ JHtml::_('bootstrap.tooltip');
 
 ?>
 
-<ul class="breadcrumb<?php echo $moduleclass_sfx; ?>">
+<ul class="breadcrumbs<?php echo $moduleclass_sfx; ?>">
 	<?php
 	if ($params->get('showHere', 1))
 	{
-		echo JText::_('<li style="color: rgb(43, 166, 203); margin-top: -10px;">You are here:</li>');
+		echo JText::_('<li>You are here:</li>');
 	}
 
 	// Get rid of duplicated entries on trail including home page when using multilanguage
@@ -55,7 +55,8 @@ JHtml::_('bootstrap.tooltip');
 
 		if (($key != $penult_item_key) || $show_last)
 		{
-			echo '<span class="divider">' . $separator . '</span>';
+			echo '';
+			// echo '<span class="divider">' . $separator . '</span>';
 		}
 
 		echo '</li>';
@@ -64,7 +65,7 @@ JHtml::_('bootstrap.tooltip');
 	{
 		// Render last item if reqd.
 		echo '<li>';
-		echo '<span>' . $item->name . '</span>';
+		echo '<span class="current">' . $item->name . '</span>';
 		echo '</li>';
 	}
 	endforeach; ?>

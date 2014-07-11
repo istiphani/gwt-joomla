@@ -2,47 +2,72 @@
 <extension version="3.0" type="template" client="site">
   <name>gwt-joomla-3.0</name>
   <version>3.0</version>
-  <creationDate>06-20-2013</creationDate>
+  <creationDate>June 2014</creationDate>
   <author>iGov Philippines</author>
   <authorEmail>gwtsupport@i.gov.ph</authorEmail>
   <authorURL>http://i.gov.ph</authorURL>
   <copyright>All content is in the public domain unsless otherwise stated.</copyright>
-  <description>Joomla 3.x Government Web Template</description>
-
-    <files>
-    <filename>index.php</filename>
-    <filename>favico.ico</filename>
-    <filename>framework.php</filename>
-    <folder>css</folder>
-    <folder>js</folder>
-    <folder>images</folder>
-    <folder>html</folder>
-    <folder>layouts</folder>
+  <license>GNU General Public License version 2 or later</license>
+  <description>Government Web Template for Joomla 3.x, version 3.0a</description>
+  
+  <files>
+	  <filename>index.php</filename>
+	  <filename>templateDetails.xml</filename>
+      <filename>framework.php</filename>
+	  <filename>favico.ico</filename>
+	  <filename>template_preview.png</filename>
+	  <filename>template_thumbnail.png</filename>
+	  <filename>robots.txt</filename>
+      <folder>css</folder>
+      <folder>js</folder>
+      <folder>images</folder>
+      <folder>html</folder>
+      <folder>layouts</folder>
+	  <folder>language</folder>
   </files>
-
+  
   <positions>
-        <position>home</position>
-        <position>topbar-left-1</position>
-        <position>topbar-left-2</position>
-        <position>topbar-left-3</position>
-        <position>topbar-left-4</position>
-        <position>topbar-right-1</position>
-        <position>topbar-right-2</position>
+		<position>topbar-left</position>
+        <position>topbar-right</position>
         <position>search</position>
+		<position>masthead-feature-1</position>
+		<position>masthead-feature-2</position>
+		<position>banner</position>
+		<position>banner-featured</position>
 		<position>auxiliary-menu</position>
-		<position>breadcrumb</position>
-        <position>main-content</position>
-	  	<position>main-content-2</position>
-        <position>slider</position>
-        <position>left-sidebar-panel1</position>
-        <position>left-sidebar-panel2</position>
-        <position>left-sidebar-panel3</position>
-        <position>right-sidebar-panel1</position>
-        <position>right-sidebar-panel2</position>
-        <position>right-sidebar-panel3</position>
-        <position>agencyfooter-1</position>
-        <position>agencyfooter-2</position>
-        <position>agencyfooter-3</position>
+		<position>breadcrumbs</position>
+		<position>right-sidebar</position>
+		<position>left-sidebar</position>
+		<position>panel-top-1col</position>
+		<position>panel-top-2col-1</position>
+		<position>panel-top-2col-2</position>
+		<position>panel-top-3col-1</position>
+		<position>panel-top-3col-2</position>
+		<position>panel-top-3col-3</position>
+		<position>panel-top-4col-1</position>
+		<position>panel-top-4col-2</position>
+		<position>panel-top-4col-3</position>
+		<position>panel-top-4col-4</position>	
+		<position>panel-btm-1col</position>
+		<position>panel-btm-2col-1</position>
+		<position>panel-btm-2col-2</position>
+		<position>panel-btm-3col-1</position>
+		<position>panel-btm-3col-2</position>
+		<position>panel-btm-3col-3</position>
+		<position>panel-btm-4col-1</position>
+		<position>panel-btm-4col-2</position>
+		<position>panel-btm-4col-3</position>
+		<position>panel-btm-4col-4</position>
+        <position>footer-1col</position>
+		<position>footer-2col-1</position>
+		<position>footer-2col-2</position>
+		<position>footer-3col-1</position>
+		<position>footer-3col-2</position>
+		<position>footer-3col-3</position>
+		<position>footer-4col-1</position>
+		<position>footer-4col-2</position>
+		<position>footer-4col-3</position>
+		<position>footer-4col-4</position>
   </positions>
 
   <config>
@@ -50,56 +75,63 @@
           
       <fieldset name="themeOptions" label="Theme Options">
 
-        <field name="logoFile" class="" type="media" default=""
+        <field name="agencyLogo" class="" type="media" default=""
           label="Header Logo Upload"
-          description="Upload the image of your logo and agency name here" />
-          
-        <field name="logoPosition"
-          type="radio"
-          class="btn-group"
-          default="0"
-          label="Header Logo Position"
-          description="Select Logo Position."
-        >
-          <option value="0">LEFT</option>
-          <option value="1">CENTER</option>
-        </field>
-          
-        <field name="headerBackgroundColor" class="" type="color" default="#142745"
+          description="Upload the image of your logo with agency name here" />
+		  
+		<field name="logoPosition"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="Header Logo Position"
+			description="Select Logo Position">
+			
+			<option value="0">LEFT</option>
+			<option value="1">CENTER</option>
+		</field>
+			
+        <field name="headerBackgroundColor" class="" type="color" default="#0D4E86"
           label="Header Background Color"
           description="Enter the hex code for your header background color." />
 
         <field name="headerBackgroundImage" class="" type="media" default=""
           label="Header Background Image"
-          description="Enter your background image here." />
-
-        <!--field name="bannerFullwidth"
-          type="radio"
-          class="btn-group"
-          default="0"
-          label="Fullwidth Liquid Banner"
-          description="Select Yes to enable Full Width liquid banner."
-        >
-          <option value="0">NO</option>
-          <option value="1">YES</option>
-        </field-->
+          description="Enter your header's background image here." />
+		  
+  		<field name="headerColumns" type="radio" class="btn-group" default="0" label="Header Columns" description="Select number of columns for header.">
+  			<option value="0">1 COL</option>
+  			<option value="1">2 COLS</option>
+  			<option value="2">3 COLS Left</option>
+			<option value="3">3 COLS Right</option>
+  		</field>
           
-        <field name="bannerBackgroundColor" class="" type="color" default="#1f3a70"
+        <field name="bannerBackgroundColor" class="" type="color" default="#0D4E86"
           label="Banner Background Color"
           description="Enter the hex code for your banner background color." />
-
-        <field name="sidebarPosition"
-          type="radio"
-          class="btn-group"
-          default="0"
-          label="Sidebar Position"
-          description="Select Sidebar Position."
-        >
-          <option value="0">LEFT</option>
-          <option value="1">RIGHT</option>
-          <option value="2">DISABLE</option>
-          <option value="3">BOTH</option>
-        </field>
+		  
+		<field name="bannerBackgroundImage" class="" type="media" default="" label="Banner Background Image" description="Enter your banner's background image here." />
+		
+		<field name="bannerPosition" type="radio" class="btn-group" default="0" label="Banner Position" description="Select banner position">
+			<option value="0">Standard 1 COL</option>
+			<option value="1">Standard 2 COLS</option>
+			<option value="2">Full Width</option>
+		</field>
+		
+        <field name="bannerFeaturedColor" class="" type="color" default=""
+          label="Banner Featured Content Color"
+          description="Enter the hex code for your banner's featured content background color." />
+		  
+          <field name="bannerFeaturedImage" class="" type="media" default=""
+            label="Banner Featured Content Background Image"
+            description="Enter your banner's featured content background image here." />
+		
+		<field name="sidebarPosition" type="radio" class="btn-group" default="0" label="Sidebar Position" description="Select sidebar position">
+			<option value="0">LEFT</option>
+			<option value="1">RIGHT</option>
+			<option value="2">NO SIDEBAR</option>
+			<option value="3">BOTH</option>
+		</field>
+		
     </fieldset>  
         
     <fieldset name="sliderOptions" label="Image Slider">
@@ -139,10 +171,14 @@
         <field name="imgUrl9" label="Image 9" description="Image 9" type="media" />
         <field name="imgExcerpt9" label="Caption 9" description="Caption 9" type="text" />
         <field name="imgLink9" label="Link 9" description="Link 9" type="text" />
+		
+        <field name="imgUrl10" label="Image 10" description="Image 10" type="media" />
+        <field name="imgExcerpt10" label="Caption 10" description="Caption 10" type="text" />
+        <field name="imgLink10" label="Link 10" description="Link 10" type="text" />
                   
     </fieldset>    
           
-    <fieldset name="accessibility" label="Accessibility">
+    <!--fieldset name="accessibility" label="Accessibility">
 		<field name="accessAccessibility" class="" type="text" default=""
           label="Accessibility Access Key Site (Alt+0): Accessibility Statement"
           description="Enter link for accessibility accesskey (0)" />
@@ -174,7 +210,7 @@
 		<field name="accessSearch" class="" type="text" default=""
           label="Accessibility Access Key Site (Alt+S): Search"
           description="Enter link for search accesskey (S)" />
-      </fieldset>
+      </fieldset-->
     </fields>
   </config>
 </extension>
