@@ -9,6 +9,6 @@ Notes:
 * For experienced Joomla users, please report any template issues to gwtsupport@i.gov.ph.
 
 Updates:
-* Foundation framework
-* Module positions
+* Foundation framework updated to 5.3
+* New module positions
 * Bug fixes for template overrides from gwt-joomla-2.2.3
