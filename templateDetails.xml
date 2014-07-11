@@ -14,7 +14,8 @@
 	  <filename>index.php</filename>
 	  <filename>templateDetails.xml</filename>
       <filename>framework.php</filename>
-	  <filename>favico.ico</filename>
+	  <filename>favicon.ico</filename>
+	  <filename>style.css</filename>
 	  <filename>template_preview.png</filename>
 	  <filename>template_thumbnail.png</filename>
 	  <filename>robots.txt</filename>
@@ -23,7 +24,6 @@
       <folder>images</folder>
       <folder>html</folder>
       <folder>layouts</folder>
-	  <folder>language</folder>
   </files>
   
   <positions>
