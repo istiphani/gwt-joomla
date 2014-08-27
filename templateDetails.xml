@@ -140,7 +140,10 @@
         <field name="imgUrl9" label="Image 9" description="Image 9" type="media" />
         <field name="imgExcerpt9" label="Caption 9" description="Caption 9" type="text" />
         <field name="imgLink9" label="Link 9" description="Link 9" type="text" />
-                  
+        
+        <field name="imgUrl10" label="Image 10" description="Image 10" type="media" />
+        <field name="imgExcerpt10" label="Caption 10" description="Caption 10" type="text" />
+        <field name="imgLink10" label="Link 10" description="Link 10" type="text" />            
     </fieldset>    
           
     <fieldset name="accessibility" label="Accessibility">
