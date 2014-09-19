@@ -156,14 +156,17 @@ if ($this->params->get('bannerFeaturedImage'))
 <script src="<?php echo 'templates/' . $this->template . '/js/foundation.min.js'; ?>"></script>
 
 <script>
-$(document).foundation('section').foundation('orbit', {
+$(document).ready(function(){
+  $(document).foundation();
+  $(document).foundation('section').foundation('orbit', {
     animation: 'fade',
     timer_speed: 5000,
-	pause_on_hover: true,
-	resume_on_mouseout: true,
+  	pause_on_hover: true,
+  	resume_on_mouseout: true,
     bullets: false,
     variable_height: false,
   });
+});
 </script>
 
 </body>
