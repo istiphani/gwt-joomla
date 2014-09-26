@@ -2,7 +2,7 @@
 <?php if ($this->params->get('bannerPosition') == 2): ?>
 	
 <div id="banner" style="margin: 0; padding: 0;">
-	
+
 	<?php if ($this->countModules('banner')): ?>
 	
 	<ul class="example-orbit" data-orbit data-options="">

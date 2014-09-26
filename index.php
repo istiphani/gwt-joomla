@@ -33,7 +33,7 @@ if ($option == 'com_content' && $view == 'article'):
   $article_fulltext = $article->get('fulltext');
   $author = $user->name;
 
-  $db = &JFactory::getDBO();
+  $db = JFactory::getDBO();
   $id = JRequest::getString('id');
   $db->setQuery('SELECT #__categories.title FROM #__content, #__categories WHERE #__content.catid = #__categories.id AND #__content.id = '.$id);
   $category = $db->loadResult();
@@ -164,7 +164,7 @@ $(document).ready(function(){
   	pause_on_hover: true,
   	resume_on_mouseout: true,
     bullets: false,
-    variable_height: false,
+    variable_height: false
   });
 });
 </script>

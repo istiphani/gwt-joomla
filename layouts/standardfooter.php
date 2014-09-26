@@ -15,9 +15,9 @@
           </div>
         </div>
 
-        <div class="large-6 medium-6 columns">
+        <div class="large-6 medium-8 columns">
           <div class="row">
-            <div class="large-5 medium-5 columns">
+            <div class="large-5 medium-6 columns">
               <h4>About GOVPH</h4>
               <p>Learn more about the Philippine government, its structure, how government works and the people behind it. </p>
               <ul>
@@ -26,7 +26,7 @@
               </ul>              
             </div>
 
-            <div class="large-4 medium-4 columns">
+            <div class="large-4 medium-6 columns">
               <h4>Government Links</h4>
               <ul>
                 <li><a href="http://president.gov.ph">Office of the President</a></li>

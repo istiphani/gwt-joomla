@@ -1,6 +1,5 @@
 <!-- agency footer -->
-	<a name="agencyfooter">
-	<div id="footer">
+	<div id="footer" name="agencyfooter">
 		<div class="row">
 		
 			<div class="large-12 columns" role="complementary">

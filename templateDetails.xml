@@ -132,6 +132,12 @@
 			<option value="3">BOTH</option>
 		</field>
 		
+    <!-- TODO: must create a pst module -->
+    <field name="pstPosition" type="radio" class="btn-group" default="0" label="PST Position" description="Position of the Philippine Standard Module. If none, must have a replacement PST module.">
+      <option value="1">LEFT</option>
+      <option value="0">NONE</option>
+      <option value="2">RIGHT</option>
+    </field>
     </fieldset>  
         
     <fieldset name="sliderOptions" label="Image Slider">
