@@ -1,5 +1,5 @@
 ==gwt-joomla-3.0a==
-Government Web Template 3.0 for Joomla 3.x (ALPHA)
+Government Web Template 3.0 for Joomla 3.x
 
 Notes:
 * See modulepositions.jpg in /images for this template's module positions.
