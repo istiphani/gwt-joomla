@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.1" type="template" client="site">
-  <name>gwt-joomla-3.1</name>
-  <version>3.1</version>
+<extension version="3.0" type="template" client="site">
+  <name>gwt-joomla-3.0</name>
+  <version>3.0</version>
   <creationDate>June 2014</creationDate>
   <author>iGov Philippines</author>
   <authorEmail>gwtsupport@i.gov.ph</authorEmail>
   <authorURL>http://i.gov.ph</authorURL>
   <copyright>All content is in the public domain unsless otherwise stated.</copyright>
   <license>GNU General Public License version 2 or later</license>
-  <description>Government Web Template for Joomla 3.x, version 3.1</description>
+  <description>Government Web Template for Joomla 3.x, version 3.0a</description>
   
   <files>
 	  <filename>index.php</filename>
@@ -132,12 +132,12 @@
 			<option value="3">BOTH</option>
 		</field>
 		
-    <!-- TODO: must create a pst module -->
-    <field name="pstPosition" type="radio" class="btn-group" default="0" label="PST Position" description="Position of the Philippine Standard Module. If none, must have a replacement PST module.">
-      <option value="1">LEFT</option>
-      <option value="0">NONE</option>
-      <option value="2">RIGHT</option>
-    </field>
+        <!-- TODO: must create a pst module -->
+        <field name="pstPosition" type="radio" class="btn-group" default="0" label="PST Position" description="Position of the Philippine Standard Module. If none, must have a replacement PST module.">
+          <option value="1">LEFT</option>
+          <option value="0">NONE</option>
+          <option value="2">RIGHT</option>
+        </field>
     </fieldset>  
         
     <fieldset name="sliderOptions" label="Image Slider">
@@ -184,39 +184,22 @@
                   
     </fieldset>    
           
-    <!--fieldset name="accessibility" label="Accessibility">
-		<field name="accessAccessibility" class="" type="text" default=""
-          label="Accessibility Access Key Site (Alt+0): Accessibility Statement"
-          description="Enter link for accessibility accesskey (0)" />
-
-		<field name="accessHome" class="" type="text" default="home"
-          label="Accessibility Access Key Site (Alt+1): Home"
-          description="Enter link for home accesskey (1)" />
-
-		<field name="accessContent" class="" type="text" default="#maincontents"
-          label="Accessibility Access Key Site (Alt+R): Main Content"
-          description="Enter link for main content accesskey (R)" />
-
-		<field name="accessFAQ" class="" type="text" default=""
-          label="Accessibility Access Key Site (Alt+5): FAQ"
-          description="Enter link for FAQ accesskey (5)" />
-
-		<field name="accessContact" class="" type="text" default=""
-          label="Accessibility Access Key Site (Alt+C): Contact"
-          description="Enter link for search accesskey (C)" />
-		  
-		<field name="accessFeedback" class="" type="text" default=""
-          label="Accessibility Access Key Site (Alt+K): Feedback"
-          description="Enter link for search accesskey (K)" />
-
-		<field name="accessSiteMap" class="" type="text" default="#agencyfooter"
-          label="Accessibility Access Key Site (Alt+M): Site Map"
-          description="Enter link for search accesskey (M)" />
-
-		<field name="accessSearch" class="" type="text" default=""
-          label="Accessibility Access Key Site (Alt+S): Search"
-          description="Enter link for search accesskey (S)" />
-      </fieldset-->
+    <fieldset name="accessibility" label="Accessibility">
+        <!-- TODO: test shortcut for mac safari, mac chrome -->
+        <field type="note" label="Shortcut Keys Combination Activation" description="Combination keys used for each browser." />
+        <field type="note" description="Chrome for Linux press (Alt+Shift+shortcut_key)" />
+        <field type="note" description="Chrome for Windows press (Alt+shortcut_key)" />
+        <field type="note" description="For Firefox press (Alt+Shift+shortcut_key)" />
+        <field type="note" description="For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter)" />
+		<field name="accessAccessibility" class="" type="text" default="" label="Accessibility Access Key Site (Combination+0): Accessibility Statement" description="Enter link for accessibility accesskey (0)" />
+		<field name="accessHome" class="" type="text" default="index.php" label="Accessibility Access Key Site (Alt+1): Home" description="Enter link for home accesskey (1)" />
+		<field name="accessContent" class="" type="text" default="#maincontents" label="Accessibility Access Key Site (Alt+R): Main Content" description="Enter link for main content accesskey (R)" />
+		<field name="accessFAQ" class="" type="text" default="" label="Accessibility Access Key Site (Alt+5): FAQ" description="Enter link for FAQ accesskey (5)" />
+		<field name="accessContact" class="" type="text" default="" label="Accessibility Access Key Site (Alt+C): Contact" description="Enter link for search accesskey (C)" />
+		<field name="accessFeedback" class="" type="text" default="" label="Accessibility Access Key Site (Alt+K): Feedback" description="Enter link for search accesskey (K)" />
+		<field name="accessSiteMap" class="" type="text" default="#agencyfooter" label="Accessibility Access Key Site (Alt+M): Site Map" description="Enter link for search accesskey (M)" />
+		<field name="accessSearch" class="" type="text" default="" label="Accessibility Access Key Site (Alt+S): Search" description="Enter link for search accesskey (S)" />
+      </fieldset>
     </fields>
   </config>
 </extension>

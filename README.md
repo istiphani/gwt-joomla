@@ -1,5 +1,5 @@
 ==gwt-joomla-3.0a==
-Government Web Template 3.0 for Joomla 3.x
+Government Web Template 3.0 for Joomla 3.x (ALPHA)
 
 Notes:
 * See modulepositions.jpg in /images for this template's module positions.
@@ -13,9 +13,3 @@ Updates:
 * Foundation framework updated to 5.3
 * New module positions
 * Bug fixes for template overrides from gwt-joomla-2.2.3
-
-Updates(2014-09-26):
-* Fix feeds module bug
-* added PST settings
-* Dynamic sidebar, hides entire sidebar if no modules is present
-* Fix content floating
