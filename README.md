@@ -6,7 +6,6 @@ Notes:
 * Banner width should be 1250px
 * Any content in the masthead area should NOT EXCEED 100px.
 * For experienced Joomla users, please report any template issues to gwtsupport@i.gov.ph.
-* !!! IMPORTANT !!! The Philippine Standard Time may be hindering the speed at which you load your website. If your website is still in development, you can comment out the PST at /layouts/contents.php.
 
 Updates:
 * Foundation framework updated to 5.3
