@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.2" type="template" client="site">
-  <name>gwt-joomla-3.2</name>
-  <version>3.2</version>
+<extension version="3.3" type="template" client="site">
+  <name>gwt-joomla-3.3</name>
+  <version>3.3</version>
   <creationDate>June 2014</creationDate>
   <author>iGov Philippines</author>
   <authorEmail>gwtsupport@i.gov.ph</authorEmail>
@@ -38,36 +38,18 @@
 		<position>breadcrumbs</position>
 		<position>right-sidebar</position>
 		<position>left-sidebar</position>
-		<position>panel-top-1col</position>
-		<position>panel-top-2col-1</position>
-		<position>panel-top-2col-2</position>
-		<position>panel-top-3col-1</position>
-		<position>panel-top-3col-2</position>
-		<position>panel-top-3col-3</position>
-		<position>panel-top-4col-1</position>
-		<position>panel-top-4col-2</position>
-		<position>panel-top-4col-3</position>
-		<position>panel-top-4col-4</position>	
-		<position>panel-btm-1col</position>
-		<position>panel-btm-2col-1</position>
-		<position>panel-btm-2col-2</position>
-		<position>panel-btm-3col-1</position>
-		<position>panel-btm-3col-2</position>
-		<position>panel-btm-3col-3</position>
-		<position>panel-btm-4col-1</position>
-		<position>panel-btm-4col-2</position>
-		<position>panel-btm-4col-3</position>
-		<position>panel-btm-4col-4</position>
-        <position>footer-1col</position>
-		<position>footer-2col-1</position>
-		<position>footer-2col-2</position>
-		<position>footer-3col-1</position>
-		<position>footer-3col-2</position>
-		<position>footer-3col-3</position>
-		<position>footer-4col-1</position>
-		<position>footer-4col-2</position>
-		<position>footer-4col-3</position>
-		<position>footer-4col-4</position>
+    <position>panel-top-1</position>
+    <position>panel-top-2</position>
+    <position>panel-top-3</position>
+    <position>panel-top-4</position>
+    <position>panel-btm-1</position>
+    <position>panel-btm-2</position>
+    <position>panel-btm-3</position>
+    <position>panel-btm-4</position>
+    <position>footer-1</position>
+    <position>footer-2</position>
+    <position>footer-3</position>
+    <position>footer-4</position>
   </positions>
 
   <config>
@@ -125,11 +107,11 @@
             label="Banner Featured Content Background Image"
             description="Enter your banner's featured content background image here." />
 		
-		<field name="sidebarPosition" type="radio" class="btn-group" default="0" label="Sidebar Position" description="Select sidebar position">
+		<field name="sidebarPosition" type="radio" class="btn-group" default="3" label="Sidebar Position" description="Select sidebar position">
 			<option value="0">LEFT</option>
+      <option value="3">BOTH</option>
 			<option value="1">RIGHT</option>
 			<option value="2">NO SIDEBAR</option>
-			<option value="3">BOTH</option>
 		</field>
 		
         <!-- TODO: must create a pst module -->

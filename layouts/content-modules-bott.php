@@ -1,53 +1,120 @@
 <!-- modules -->
 <div class="row padding">
+<?php
+$class_btm1 = '';
+$class_btm2 = '';
+$class_btm3 = '';
+$class_btm4 = '';
+if($this->countModules('panel-btm-1')){
 
-<div id="content-1col">
-	<div class="large-12 columns">
-		<jdoc:include type="modules" name="panel-btm-1col" style="xhtml" />
-	</div>
-</div>
-
-<div id="content-2col">
-	<div class="large-6 medium-6 columns">
-		<jdoc:include type="modules" name="panel-btm-2col-1" style="xhtml" />
-	</div>
-
-	<div class="large-6 medium-6 columns">
-		<jdoc:include type="modules" name="panel-btm-2col-2" style="xhtml" />
-	</div>
-</div>
-
-<div id="content-3col">
-	<div class="large-4 medium-4 columns">
-		<jdoc:include type="modules" name="panel-btm-3col-1" style="xhtml" />
-	</div>
-	
-	<div class="large-4 medium-4 columns">
-		<jdoc:include type="modules" name="panel-btm-3col-2" style="xhtml" />
-	</div>
-	
-	<div class="large-4 medium-4 columns">
-		<jdoc:include type="modules" name="panel-btm-3col-3" style="xhtml" />
-	</div>
-</div>
-
-<div id="content-4col">
-	<div class="large-3 medium-3 columns">
-		<jdoc:include type="modules" name="panel-btm-4col-1" style="xhtml" />
-	</div>
-	
-	<div class="large-3 medium-3 columns">
-		<jdoc:include type="modules" name="panel-btm-4col-2" style="xhtml" />
-	</div>
-	
-	<div class="large-3 medium-3 columns">
-		<jdoc:include type="modules" name="panel-btm-4col-3" style="xhtml" />
-	</div>
-	
-	<div class="large-3 medium-3 columns">
-		<jdoc:include type="modules" name="panel-btm-4col-4" style="xhtml" />
-	</div>
-</div>
-
+	$class_btm1 = 'large-12';
+	if($this->countModules('panel-btm-2')){
+		$class_btm1 = 'large-6';
+		$class_btm2 = 'large-6';
+		if($this->countModules('panel-btm-3')){
+			$class_btm1 = 'large-4';
+			$class_btm2 = 'large-4';
+			$class_btm3 = 'large-4';
+			if($this->countModules('panel-btm-4')){
+				$class_btm1 = 'large-3';
+				$class_btm2 = 'large-3';
+				$class_btm3 = 'large-3';
+				$class_btm4 = 'large-3';
+			}
+		}
+		elseif(!$this->countModules('panel-btm-3') && $this->countModules('panel-btm-4')){
+			$class_btm1 = 'large-4';
+			$class_btm2 = 'large-4';
+			// $class_btm3 = 'large-3';
+			$class_btm4 = 'large-4';
+		}
+	}
+	else{
+		if($this->countModules('panel-btm-3')){
+			$class_btm1 = 'large-6';
+			// $class_btm2 = 'large-4';
+			$class_btm3 = 'large-6';
+			if($this->countModules('panel-btm-4')){
+				$class_btm1 = 'large-4';
+				// $class_btm2 = 'large-3';
+				$class_btm3 = 'large-4';
+				$class_btm4 = 'large-4';
+			}
+		}
+		elseif(!$this->countModules('panel-btm-3') && $this->countModules('panel-btm-4')){
+			$class_btm1 = 'large-6';
+			// $class_btm2 = 'large-4';
+			// $class_btm3 = 'large-3';
+			$class_btm4 = 'large-6';
+		}
+	}
+}
+else{
+	if($this->countModules('panel-btm-2')){
+		// $class_btm1 = 'large-6';
+		$class_btm2 = 'large-12';
+		if($this->countModules('panel-btm-3')){
+			// $class_btm1 = 'large-4';
+			$class_btm2 = 'large-6';
+			$class_btm3 = 'large-6';
+			if($this->countModules('panel-btm-4')){
+				// $class_btm1 = 'large-3';
+				$class_btm2 = 'large-4';
+				$class_btm3 = 'large-4';
+				$class_btm4 = 'large-4';
+			}
+		}
+		elseif(!$this->countModules('panel-btm-3') && $this->countModules('panel-btm-4')){
+			// $class_btm1 = 'large-4';
+			$class_btm2 = 'large-6';
+			// $class_btm3 = 'large-3';
+			$class_btm4 = 'large-6';
+		}
+	}
+	else{
+		if($this->countModules('panel-btm-3')){
+			// $class_btm1 = 'large-6';
+			// $class_btm2 = 'large-4';
+			$class_btm3 = 'large-12';
+			if($this->countModules('panel-btm-4')){
+				// $class_btm1 = 'large-4';
+				// $class_btm2 = 'large-3';
+				$class_btm3 = 'large-6';
+				$class_btm4 = 'large-6';
+			}
+		}
+		elseif(!$this->countModules('panel-btm-3') && $this->countModules('panel-btm-4')){
+			// $class_btm1 = 'large-6';
+			// $class_btm2 = 'large-4';
+			// $class_btm3 = 'large-3';
+			$class_btm4 = 'large-12';
+		}
+	}
+}
+$class_btm1 .= ' columns';
+$class_btm2 .= ' columns';
+$class_btm3 .= ' columns';
+$class_btm4 .= ' columns';
+?>
+		<?php if($this->countModules('panel-btm-1')): ?>
+		<div class="<?php echo $class_btm1; ?>">
+			<jdoc:include type="modules" name="panel-btm-1" style="xhtml" />
+		</div>
+		<?php endif; ?>
+		<?php if($this->countModules('panel-btm-2')): ?>
+		<div class="<?php echo $class_btm2; ?>">
+			<jdoc:include type="modules" name="panel-btm-2" style="xhtml" />
+		</div>
+		<?php endif; ?>
+		<?php if($this->countModules('panel-btm-3')): ?>
+		<div class="<?php echo $class_btm3; ?>">
+			<jdoc:include type="modules" name="panel-btm-3" style="xhtml" />
+		</div>
+		<?php endif; ?>
+		<?php if($this->countModules('panel-btm-4')): ?>
+		<div class="<?php echo $class_btm4; ?>">
+			<jdoc:include type="modules" name="panel-btm-4" style="xhtml" />
+		</div>
+		<?php endif; ?>
 </div>
 <!-- end modules -->
