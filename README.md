@@ -1,5 +1,5 @@
-==gwt-joomla-3.1==
-Government Web Template 3.1 for Joomla 3.x
+==gwt-joomla-3.4==
+Government Web Template 3.4 for Joomla 3.x
 
 Notes:
 * See modulepositions.jpg in /images for this template's module positions.
