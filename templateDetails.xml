@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.3" type="template" client="site">
-  <name>gwt-joomla-3.3</name>
-  <version>3.3</version>
+<extension version="3.4" type="template" client="site">
+  <name>gwt-joomla-3.4</name>
+  <version>3.4</version>
   <creationDate>June 2014</creationDate>
   <author>iGov Philippines</author>
   <authorEmail>gwtsupport@i.gov.ph</authorEmail>

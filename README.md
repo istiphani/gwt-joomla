@@ -1,5 +1,5 @@
-==gwt-joomla-3.3==
-Government Web Template 3.3 for Joomla 3.x
+==gwt-joomla-3.1==
+Government Web Template 3.1 for Joomla 3.x
 
 Notes:
 * See modulepositions.jpg in /images for this template's module positions.
@@ -13,14 +13,13 @@ Updates:
 * Bug fixes for template overrides from gwt-joomla-2.2.3
 
 ###### CHANGE LOGS
-**29-01-2014**
+**2014-01-29**
 - Fix feeds module bug
 - added PST settings
 - Dynamic sidebar, hides entire sidebar if no modules is present
 - Fix content floating
 - Re-added accesibility option
 
-**29-10-2014**
-- Dynamic top panels, auto width resizing up to 4 columns
-- Dynamic bottom panels, auto width resizing up to 4 columns
-- Dynamic agency footer region, auto width resizing up to 4 columns
+**2014-01-05**
+- redesign version 6 design
+- fix mobile auxiliary menu, added dropdown

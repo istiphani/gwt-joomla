@@ -3,8 +3,11 @@
 	<div id="auxiliary">
 		<div class="row">
 			<div class="large-12 columns">
-				<nav class="top-bar" data-topbar>
-            		<section class="top-bar-section">
+				<div class="aux-nav-btn-container hide-for-medium-up" >
+					<button id="aux-nav-btn" data-dropdown="aux-nav">Auxiliary Menu</button>
+				</div>
+				<nav id="aux-nav" class="top-bar show-for-medium-up" data-dropdown-content>
+            		<section>
                 		<ul class="left">
 							<li class="divider"></li>
                    			<li><jdoc:include type="modules" name="auxiliary-menu" style="none" /></li>
