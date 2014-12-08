@@ -1,5 +1,5 @@
 <!-- modules -->
-<div class="row padding">
+<div class="row">
 
 <?php
 $class_top1 = '';

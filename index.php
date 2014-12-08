@@ -114,7 +114,9 @@ if ($this->params->get('accessSearch')){
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/masthead.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/banner.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/breadcrumb.php'; ?>
-<?php include_once JPATH_THEMES . '/' .$this->template . '/layouts/contents.php'; ?>
+<?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/content-modules.php'; ?>
+<?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/contents.php'; ?>
+<?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/content-modules-bott.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/agencyfooter.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/standardfooter.php'; ?>
 <!--a href="#" class="scrollup">Scroll</a><a>Hello</a-->

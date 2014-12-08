@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {font-family: "Roboto Condensed",sans-serif; font-weight:
 .top-bar-section li.active:not(.has-form) a:not(.button):hover{
 	background: #ededed;
 	color: #000;
+	border-bottom: solid 1px #ebebeb;
 }
 .top-bar .toggle-topbar.menu-icon a{
 	color: #000;
@@ -256,6 +257,8 @@ p.img_caption {font-size: 0.75rem;}
 		color: #000;
 		font-size: 13px;
 		padding: 0 20px;
+		position: relative;
+		border-top: 1px solid #ebebeb;
 	}
 	#aux-nav ul li a:hover{
 		background: #EDEDED;
@@ -266,24 +269,21 @@ p.img_caption {font-size: 0.75rem;}
 		width: 0;
 		height: 0;
 		border: inset 5px;
-		border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
+		border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
 		border-top-style: solid;
 		margin-top: -2.5px;
 		top: 22.5px;
 
-		border-color: transparent transparent transparent rgba(0, 0, 0, 0.4);
 		margin-top: 1.5px;
 		right: 30px;
 		position: absolute;
 	}
 	#aux-nav ul li.has-dropdown ul{
-		margin: 0;
+		margin-left: 15px;
 	}
 	#aux-nav ul li.has-dropdown ul > li{
 	}
 	#aux-nav ul li.has-dropdown ul li > a{
-		padding-left: 30px;
-		padding-right: 20px;
 	}
 	#banner{
 		display: none;
@@ -309,7 +309,13 @@ p.img_caption {font-size: 0.75rem;}
 	}
 	#aux-nav .has-dropdown{
 	}
-	#aux-nav .has-dropdown > a:after {
+	#aux-nav ul.dropdown{
+		width: 100%;
+	}
+	#aux-nav ul.dropdown li{
+		border-bottom: solid 1px #ebebeb;
+	}
+	#aux-nav li.has-dropdown > a:after {
 		content: "";
 		display: block;
 		width: 0;
@@ -341,6 +347,7 @@ p.img_caption {font-size: 0.75rem;}
 	#aux-nav li.has-dropdown{
 		position: relative;
 	}
+	/** first level **/
 	#aux-nav li.has-dropdown > a{
 		padding-right: 35px !important;
 	}
@@ -349,9 +356,25 @@ p.img_caption {font-size: 0.75rem;}
 		position: absolute;
 		margin-left: 0;
 		z-index: 1;
-		width: 100%;
+		width: auto;
 	}
 	#aux-nav li.has-dropdown > .dropdown > li{
+		position: relative;
+		width: 100%;
+		
+	}
+	#aux-nav li.has-dropdown > .dropdown > li.has-dropdown > a:after{
+		border: none;
+		content: "\00bb";
+		top: 1rem;
+		margin-top: 4px;
+		right: 5px;
+		line-height: 1.2;
+	}
+	#aux-nav li.has-dropdown > .dropdown > li > .dropdown{
+		position: absolute;
+		top: 0;
+		left: 100%;
 	}
 	#aux-nav li.has-dropdown:hover > .dropdown{
 		display: block;

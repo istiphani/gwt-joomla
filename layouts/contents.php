@@ -1,10 +1,10 @@
 <!-- contents -->
 <div id="main"><a name="maincontents"></a>
+	
 	<div class="row">
 		
 		<?php if ($this->params->get('sidebarPosition') == 3): ?>
 			
-			<?php include JPATH_THEMES . '/' . $this->template .'/layouts/content-modules.php'; ?>
 			<?php
 			$sidebar_left_class = '';
 			$content_class = '';
@@ -69,12 +69,9 @@
 			</div>
 			*/
 			?>
-			
-			<?php include JPATH_THEMES . '/' . $this->template .'/layouts/content-modules-bott.php'; ?>
 		
 		<?php elseif ($this->params->get('sidebarPosition') == 2): ?>
 			
-			<?php include JPATH_THEMES . '/' . $this->template .'/layouts/content-modules.php'; ?>
 			
 			<div id="content" class="large-12 columns">
 				<div class="post-box">
@@ -84,11 +81,8 @@
 				</div>
 			</div>
 			
-			<?php include JPATH_THEMES . '/' . $this->template .'/layouts/content-modules-bott.php'; ?>
 			
 		<?php elseif ($this->params->get('sidebarPosition') == 1): ?>
-			
-			<?php include JPATH_THEMES . '/' . $this->template .'/layouts/content-modules.php'; ?>
 			
 			<?php
 			$content_class = '';
@@ -125,11 +119,8 @@
 			
 			</div>
 			
-			<?php include JPATH_THEMES . '/' . $this->template .'/layouts/content-modules-bott.php'; ?>
 			
 		<?php else: ?>
-			
-			<?php include JPATH_THEMES . '/' . $this->template .'/layouts/content-modules.php'; ?>
 			
 			<?php
 			$content_class = '';
@@ -161,7 +152,6 @@
 				</div>
 			</div>
 			
-			<?php include JPATH_THEMES . '/' . $this->template .'/layouts/content-modules-bott.php'; ?>
 		
 		<?php endif?>
 		
