@@ -108,6 +108,9 @@ h1, h2, h3, h4, h5, h6 {font-family: "Roboto Condensed",sans-serif; font-weight:
   
 /* search box */
 input[type="text"] {height: 1.875rem;}
+.top-bar input{
+	height: 40px;
+}
 
 /* auxiliary menu */
 #auxiliary {background: #f7f7f7;}
