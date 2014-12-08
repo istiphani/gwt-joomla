@@ -168,7 +168,7 @@ input[type="text"] {height: 1.875rem;}
 .breadcrumbs span.current {color: #333;}
 
 /* time */
-.time {background: #333; border-color: #222; width: 90%;}
+.time {background: #333; border-color: #222; }
 .time .pst {font-size: 13px;}
 
 /* article info and pagination */

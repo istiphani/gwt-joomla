@@ -33,7 +33,7 @@
 				<?php if($this->params->get('pstPosition') == 1): ?>
 				<ul class="breadcrumbs time">
 					<p class="pst">PHILIPPINE STANDARD TIME</p>
-					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="20" width="175" allowTransparency="true" scrolling="no"></iframe>
+					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="20" width="100%" allowTransparency="true" scrolling="no"></iframe>
 				</ul>
 				<?php endif; ?>
 				<jdoc:include type="modules" name="left-sidebar" style="xhtml" />
@@ -41,11 +41,13 @@
 			<?php endif; ?>
 			
 			<div id="content" class="<?php echo $content_class; ?>">
+				<?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/content-top.php'; ?>
 				<div class="post-box">
 		            <jdoc:include type="message" style="xhtml" />
 		            <jdoc:include type="component" style="xhtml" />
 		            <div style="clear: both;"></div>
 				</div>
+				<?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/content-bottom.php'; ?>
 			</div>
 
 			<?php if($this->countModules('right-sidebar') || $this->params->get('pstPosition') == 2): ?>

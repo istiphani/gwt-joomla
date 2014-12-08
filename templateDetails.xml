@@ -28,15 +28,17 @@
   
   <positions>
 		<position>topbar-left</position>
-        <position>topbar-right</position>
-        <position>search</position>
+    <position>topbar-right</position>
+    <position>search</position>
 		<position>masthead-feature-1</position>
 		<position>masthead-feature-2</position>
 		<position>banner</position>
 		<position>banner-featured</position>
 		<position>auxiliary-menu</position>
 		<position>breadcrumbs</position>
-		<position>right-sidebar</position>
+    <position>right-sidebar</position>
+    <position>content-top</position>
+		<position>content-bottom</position>
 		<position>left-sidebar</position>
     <position>panel-top-1</position>
     <position>panel-top-2</position>
