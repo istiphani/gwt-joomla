@@ -114,11 +114,31 @@ if ($this->params->get('accessSearch')){
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/masthead.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/banner.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/breadcrumb.php'; ?>
-<?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/content-modules.php'; ?>
+<?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/panel-top.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/contents.php'; ?>
-<?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/content-modules-bott.php'; ?>
+<?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/panel-bottom.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/agencyfooter.php'; ?>
-<?php include_once JPATH_THEMES . '/' . $this->template .'/layouts/standardfooter.php'; ?>
+<?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/standardfooter.php'; ?>
+<div><a href="#page" id="back-to-top" style="display: inline;">Back to Top</a></div>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  var offset = 220;
+  var duration = 500;
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > offset) {
+          $('#back-to-top').fadeIn(duration);
+      } else {
+          $('#back-to-top').fadeOut(duration);
+      }
+  });
+
+  $('#back-to-top').click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, duration);
+      return false;
+  });
+});
+</script>
 <!--a href="#" class="scrollup">Scroll</a><a>Hello</a-->
 <!-- JS Files -->
 <script src="<?php echo 'templates/' . $this->template . '/js/vendor/jquery.js'; ?>"></script>
