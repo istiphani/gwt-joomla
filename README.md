@@ -24,8 +24,12 @@ Updates:
 - redesign version 6 design
 - fix mobile auxiliary menu, added dropdown
 
-**2014-09-05**
+**2014-12-08**
 - refined auxiliary menu
 - removed double padding of panel top and bottom content, fix aux menu
 - added new modules content-top, content-bottom
 - centered search
+
+**2014-12-09**
+- refined stylings
+- added go to top button
