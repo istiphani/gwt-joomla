@@ -1,4 +1,10 @@
 <!-- contents -->
+<?php
+$pstHeight = 0;
+if(is_int($this->params->get('pstHeight'))):
+	$pstHeight = $this->params->get('pstHeight');
+endif;
+?>
 <div id="main"><a name="maincontents"></a>
 	
 	<div class="row">
@@ -33,7 +39,7 @@
 				<?php if($this->params->get('pstPosition') == 1): ?>
 				<ul class="breadcrumbs time">
 					<p class="pst">PHILIPPINE STANDARD TIME</p>
-					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="20" width="100%" allowTransparency="true" scrolling="no"></iframe>
+					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="<?php echo $pstHeight; ?>" width="100%" allowTransparency="true" scrolling="no"></iframe>
 				</ul>
 				<?php endif; ?>
 				<jdoc:include type="modules" name="left-sidebar" style="xhtml" />
@@ -55,7 +61,7 @@
 				<?php if($this->params->get('pstPosition') == 2): ?>
 				<ul class="breadcrumbs time">
 					<p class="pst">PHILIPPINE STANDARD TIME</p>
-					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="20" width="175" allowTransparency="true" scrolling="no"></iframe>
+					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="<?php echo $pstHeight; ?>" width="175" allowTransparency="true" scrolling="no"></iframe>
 				</ul>
 				<?php endif; ?>
 				<jdoc:include type="modules" name="right-sidebar" style="xhtml" />
@@ -65,7 +71,7 @@
 			<div class="large-3 medium-3 columns">
 				<ul class="breadcrumbs time">
 					<p class="pst">PHILIPPINE STANDARD TIME</p>
-					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="20" width="175" allowTransparency="true" scrolling="no"></iframe>
+					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="<?php echo $pstHeight; ?>" width="175" allowTransparency="true" scrolling="no"></iframe>
 				</ul>
 				<jdoc:include type="modules" name="right-sidebar" style="xhtml" />
 			</div>
@@ -113,7 +119,7 @@
 				<?php if($this->params->get('pstPosition') != 0): ?>
 				<ul class="breadcrumbs time">
 					<p class="pst">PHILIPPINE STANDARD TIME</p>
-					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="20" width="175" allowTransparency="true" scrolling="no"></iframe>
+					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="<?php echo $pstHeight; ?>" width="175" allowTransparency="true" scrolling="no"></iframe>
 				</ul>
 				<?php endif; ?>
 				<jdoc:include type="modules" name="right-sidebar" style="xhtml" />
@@ -141,7 +147,7 @@
 				<?php if($this->params->get('pstPosition') != 0): ?>
 				<ul class="breadcrumbs time">
 					<p class="pst">PHILIPPINE STANDARD TIME</p>
-					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="20" width="175" allowTransparency="true" scrolling="no"></iframe>
+					<iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" height="<?php echo $pstHeight; ?>" width="175" allowTransparency="true" scrolling="no"></iframe>
 				</ul>
 				<?php endif; ?>
 				<jdoc:include type="modules" name="left-sidebar" style="xhtml" />

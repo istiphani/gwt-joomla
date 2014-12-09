@@ -33,3 +33,4 @@ Updates:
 **2014-12-09**
 - refined stylings
 - added go to top button
+- added pst height theme option
